@@ -1,0 +1,608 @@
+/* ===================================
+   BARETTO Espressobar - Responsive Styles
+   Mobile-First Responsive Design
+   =================================== */
+
+/* Tablet Landscape (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    :root {
+        --section-padding: 80px;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .about-content,
+    .location-content,
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet Portrait (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    :root {
+        --section-padding: 60px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Navigation */
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: white;
+        flex-direction: column;
+        padding: 40px;
+        gap: 20px;
+        transition: left 0.3s ease;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    /* Hero */
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.4rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* About */
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image-grid img:first-child {
+        grid-column: 1;
+    }
+
+    .amenities-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Menu */
+    .menu-category {
+        padding: 30px 20px;
+    }
+
+    .category-header h3 {
+        font-size: 1.8rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Reviews */
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rating-box {
+        padding: 30px 40px;
+    }
+
+    .rating-number {
+        font-size: 3rem;
+    }
+
+    /* Location */
+    .location-map iframe {
+        min-height: 400px;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Lightbox */
+    .lightbox-prev,
+    .lightbox-next {
+        padding: 15px;
+        font-size: 30px;
+    }
+
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        font-size: 40px;
+    }
+}
+
+/* Mobile Large (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    :root {
+        --section-padding: 50px;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    /* Hero */
+    .hero {
+        height: 100vh;
+        min-height: 600px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+    }
+
+    .hero-rating .stars {
+        font-size: 1.2rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.95rem;
+    }
+
+    /* Navigation */
+    .nav-brand a {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu {
+        top: 60px;
+        height: calc(100vh - 60px);
+        padding: 30px 20px;
+    }
+
+    /* About */
+    .about-text .lead {
+        font-size: 1.1rem;
+    }
+
+    .feature-item {
+        padding: 20px 15px;
+    }
+
+    .feature-icon {
+        font-size: 2.5rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .amenities {
+        padding: 25px 20px;
+    }
+
+    .amenities h3 {
+        font-size: 1.6rem;
+    }
+
+    /* Menu */
+    .menu-category {
+        padding: 25px 15px;
+    }
+
+    .category-header h3 {
+        font-size: 1.6rem;
+    }
+
+    .menu-item {
+        padding: 20px;
+    }
+
+    .item-info h4 {
+        font-size: 1.2rem;
+    }
+
+    .item-info p {
+        font-size: 0.95rem;
+    }
+
+    .menu-footer {
+        padding: 20px;
+    }
+
+    .price-note {
+        font-size: 1.1rem;
+    }
+
+    /* Gallery */
+    .gallery-item {
+        aspect-ratio: 4/3;
+    }
+
+    /* Reviews */
+    .rating-box {
+        padding: 25px 30px;
+    }
+
+    .rating-number {
+        font-size: 2.5rem;
+    }
+
+    .rating-stars {
+        font-size: 1.5rem;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-text {
+        font-size: 0.95rem;
+    }
+
+    /* Location */
+    .info-card {
+        padding: 20px;
+    }
+
+    .info-icon {
+        font-size: 2rem;
+    }
+
+    .info-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .location-map iframe {
+        min-height: 300px;
+        border-radius: 10px;
+    }
+
+    /* Contact */
+    .contact-form-wrapper {
+        padding: 25px 20px;
+    }
+
+    .contact-form h3 {
+        font-size: 1.6rem;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 14px;
+        font-size: 0.95rem;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .contact-icon {
+        font-size: 2rem;
+    }
+
+    .contact-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-card a {
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.3rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+
+    /* Back to Top */
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 1.3rem;
+    }
+
+    /* Lightbox */
+    .lightbox-content {
+        max-width: 95%;
+        max-height: 85%;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .lightbox-prev {
+        left: 10px;
+    }
+
+    .lightbox-next {
+        right: 10px;
+    }
+
+    .lightbox-close {
+        top: 15px;
+        right: 15px;
+        font-size: 35px;
+    }
+
+    .lightbox-caption {
+        bottom: 20px;
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+}
+
+/* Mobile Small (max-width: 375px) */
+@media screen and (max-width: 375px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .rating-box {
+        padding: 20px 25px;
+    }
+
+    .rating-number {
+        font-size: 2.2rem;
+    }
+
+    .hero-buttons .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile Extra Small (max-width: 320px) */
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 13px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .nav-brand a {
+        font-size: 1.3rem;
+    }
+
+    .feature-item {
+        padding: 15px;
+    }
+
+    .menu-item {
+        padding: 15px;
+    }
+
+    .review-card {
+        padding: 15px;
+    }
+
+    .info-card {
+        padding: 15px;
+    }
+
+    .contact-form-wrapper {
+        padding: 20px 15px;
+    }
+}
+
+/* Landscape Mode Fixes for Mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 100px 0 50px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .nav-menu {
+        height: auto;
+        max-height: calc(100vh - 70px);
+        overflow-y: auto;
+    }
+}
+
+/* High Resolution Displays (Retina) */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-image img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+
+    .gallery-item img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .navbar,
+    .hero-buttons,
+    .scroll-indicator,
+    .back-to-top,
+    .contact-form,
+    .lightbox {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+    }
+
+    .section-title {
+        font-size: 18pt;
+        page-break-after: avoid;
+    }
+
+    .hero {
+        height: auto;
+        page-break-after: always;
+    }
+
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+    }
+
+    .gallery-grid {
+        display: block;
+    }
+
+    .gallery-item {
+        margin-bottom: 20px;
+        page-break-inside: avoid;
+    }
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .scroll-indicator,
+    .hero-content {
+        animation: none !important;
+    }
+}
+
+/* Dark Mode Support (Optional) */
+@media (prefers-color-scheme: dark) {
+    /* Users who prefer dark mode can see slight adjustments */
+    /* Keeping cafe aesthetic warm and inviting */
+    body {
+        background-color: #1a1410;
+    }
+
+    .navbar {
+        background: rgba(30, 20, 15, 0.98);
+    }
+
+    /* Most sections keep their warm, light aesthetic for cafe feel */
+}

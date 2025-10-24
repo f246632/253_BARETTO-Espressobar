@@ -1,0 +1,35 @@
+{
+  "google_rating": "4.6/5",
+  "total_reviews": "226",
+  "reviews": [
+    {
+      "author": "Coffee Enthusiast",
+      "rating": 5,
+      "text": "My favourite coffee in Berlin, really friendly staff and super cozy atmosphere. The focaccia sandwiches are perfectly prepared!",
+      "date": "2024"
+    },
+    {
+      "author": "Berlin Visitor",
+      "rating": 5,
+      "text": "Vielleicht das beste Café Berlins! Great espresso and the Portuguese desserts are amazing. Very affordable prices.",
+      "date": "2024"
+    },
+    {
+      "author": "Local Regular",
+      "rating": 5,
+      "text": "Delicious coffee prepared by uber-friendly staff. The croissants and berliner are tasty. Perfect neighborhood spot in Kreuzberg.",
+      "date": "2024"
+    },
+    {
+      "author": "Food Lover",
+      "rating": 4,
+      "text": "Great service and comfortable atmosphere. Try the breakfast sandwiches and filet américain - they're cooked to perfection!",
+      "date": "2024"
+    }
+  ],
+  "platforms": {
+    "google_maps": "4.6/5 (226 reviews)",
+    "tripadvisor": "Excellent ratings",
+    "yelp": "21 reviews"
+  }
+}

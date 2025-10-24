@@ -1,0 +1,116 @@
+{
+  "cafe_name": "BARETTO Espressobar",
+  "specialties": [
+    "Portuguese-style espresso bar",
+    "Authentic focaccia sandwiches",
+    "Fresh Portuguese desserts",
+    "Premium coffee blends"
+  ],
+  "menu_sections": {
+    "coffee": {
+      "name": "Coffee & Espresso",
+      "items": [
+        {
+          "name": "Espresso",
+          "description": "Classic Italian espresso",
+          "type": "hot"
+        },
+        {
+          "name": "Cappuccino",
+          "description": "Perfect balance of espresso and steamed milk",
+          "type": "hot"
+        },
+        {
+          "name": "Flat White",
+          "description": "Smooth microfoam with double espresso",
+          "type": "hot"
+        },
+        {
+          "name": "Latte",
+          "description": "Creamy espresso with steamed milk",
+          "type": "hot"
+        },
+        {
+          "name": "Americano",
+          "description": "Espresso with hot water",
+          "type": "hot"
+        }
+      ]
+    },
+    "food": {
+      "name": "Food & Sandwiches",
+      "items": [
+        {
+          "name": "Focaccia Sandwich",
+          "description": "Authentic Italian focaccia with fresh ingredients",
+          "category": "sandwich"
+        },
+        {
+          "name": "Breakfast Sandwich",
+          "description": "Hearty morning sandwich on fresh bread",
+          "category": "breakfast"
+        },
+        {
+          "name": "Filet Américain",
+          "description": "Classic European specialty",
+          "category": "special"
+        },
+        {
+          "name": "Panini",
+          "description": "Toasted Italian sandwich with various fillings",
+          "category": "sandwich"
+        }
+      ]
+    },
+    "pastries": {
+      "name": "Pastries & Desserts",
+      "items": [
+        {
+          "name": "Croissant",
+          "description": "Buttery, flaky French pastry",
+          "category": "pastry"
+        },
+        {
+          "name": "Berliner",
+          "description": "Traditional German filled doughnut",
+          "category": "pastry"
+        },
+        {
+          "name": "Portuguese Desserts",
+          "description": "Authentic Portuguese sweets and pastries",
+          "category": "dessert"
+        },
+        {
+          "name": "Cakes",
+          "description": "Fresh daily selection of baked cakes",
+          "category": "dessert"
+        }
+      ]
+    },
+    "tea": {
+      "name": "Tea Selection",
+      "items": [
+        {
+          "name": "Große Auswahl an Teesorten",
+          "description": "Wide selection of premium teas",
+          "type": "hot"
+        }
+      ]
+    }
+  },
+  "price_range": "€10-20 per person",
+  "hours": {
+    "weekday": "Monday-Friday: 8:00 AM - 7:00 PM",
+    "weekend": "Saturday-Sunday: 9:00 AM - 6:00 PM"
+  },
+  "features": [
+    "Große Auswahl an Teesorten",
+    "Guter Kaffee",
+    "Frühstück",
+    "Allein speisen",
+    "Cozy atmosphere",
+    "Portuguese coffee bar style",
+    "Affordable prices",
+    "Friendly staff"
+  ]
+}
